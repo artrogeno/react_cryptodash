@@ -1,0 +1,36 @@
+.notification {
+  margin-top: .8rem;
+  width: 2.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &.notification-bar-nc {
+    .line{
+      width: 2rem;
+    }
+    .line:nth-child(2),
+    .line:nth-child(3) {
+      padding-left: .5rem;
+      width: 1.5rem;
+    }
+  }
+
+  .line{
+    width: 2.5rem;
+    height: .1rem;
+    border-radius: 2.5rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(66deg, rgba(186,204,159,1) 50%, rgba(196,208,179,0.7189250700280112) 100%, rgba(255,255,255,0.7973564425770308) 0% );
+    display: block;
+    margin: .6rem auto;
+    margin-right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

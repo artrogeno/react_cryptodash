@@ -1,0 +1,176 @@
+.hamburger {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+  }
+  &.hamburger-arrow-right {
+    .line:nth-child(1),
+    .line:nth-child(3) {
+      width: 2.5rem;;
+    }
+    .line:nth-child(1){
+      -webkit-transform: translateX(10px) rotate(45deg);
+      -ms-transform: translateX(10px) rotate(45deg);
+      -o-transform: translateX(10px) rotate(45deg);
+      transform: translateX(10px) rotate(45deg);
+    }
+    .line:nth-child(3){
+      -webkit-transform: translateX(10px) rotate(-45deg);
+      -ms-transform: translateX(10px) rotate(-45deg);
+      -o-transform: translateX(10px) rotate(-45deg);
+      transform: translateX(10px) rotate(-45deg);
+    }
+  }
+
+  &.hamburger-arrow-left {
+    .line:nth-child(1),
+    .line:nth-child(3){
+      width: 2.5rem;;
+    }
+    .line:nth-child(1){
+      -webkit-transform: translateX(-10px) rotate(-45deg);
+      -ms-transform: translateX(-10px) rotate(-45deg);
+      -o-transform: translateX(-10px) rotate(-45deg);
+      transform: translateX(-10px) rotate(-45deg);
+    }
+    .line:nth-child(3){
+      -webkit-transform: translateX(-10px) rotate(45deg);
+      -ms-transform: translateX(-10px) rotate(45deg);
+      -o-transform: translateX(-10px) rotate(45deg);
+      transform: translateX(-10px) rotate(45deg);
+    }
+  }
+
+  &.hamburger-rotate-left{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    .line:nth-child(1){
+      width: 2rem;
+    }
+    .line:nth-child(2){
+      width: 2.5rem;
+    }
+  }
+
+  &.hamburger-center-n {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    .line:nth-child(1){
+      margin-right: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(2) {
+      margin-left: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(3){
+      margin-right: 0;
+      width: 2.5rem;
+    }
+  }
+
+  &.hamburger-center-t{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    .line:nth-child(1){
+      margin-right: 0;
+      width: 1.4rem;
+    }
+    .line:nth-child(2) {
+      margin-left: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(3){
+      margin-right: 0;
+      width: 2rem;
+    }
+  }
+
+  &.hamburger-center-b{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    .line:nth-child(1){
+      margin-right: 0;
+      width: 2rem;
+    }
+    .line:nth-child(2) {
+      margin-left: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(3){
+      margin-right: 0;
+      width: 1.4rem;
+    }
+  }
+
+
+  &.hamburger-bar-na {
+    .line:nth-child(1){
+      margin-left: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(2) {
+      margin-left: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(3){
+      margin-left: 0;
+      width: 2.5rem;
+    }
+  }
+  &.hamburger-bar-nb {
+    .line:nth-child(1){
+      margin-left: 0;
+      width: 1.4rem;
+    }
+    .line:nth-child(2) {
+      margin-left: 0;
+      width: 2rem;
+    }
+    .line:nth-child(3){
+      margin-left: 0;
+      width: 2.5rem;
+    }
+  }
+  &.hamburger-bar-nc {
+    .line:nth-child(1){
+      margin-left: 0;
+      width: 2.5rem;
+    }
+    .line:nth-child(2) {
+      margin-left: 0;
+      width: 2rem;
+    }
+    .line:nth-child(3){
+      margin-left: 0;
+      width: 1.4rem;
+    }
+  }
+
+  .line{
+    width: 2.5rem;
+    height: .16rem;
+    border-radius: 2.5rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(66deg, rgba(255,255,255,0.7973564425770308) 0%, rgba(186,204,159,1) 50%, rgba(196,208,179,0.7189250700280112) 100%);
+    display: block;
+    margin: .6rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,116 @@
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+
+$font-family-base: 'Montserrat', sans-serif;
+
+
+//  ----------------
+//  Functions
+//  ----------------
+
+@mixin loop-element($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
+  @for $i from 1 through $length {
+    @if $i == 1 {
+      .#{$nameElement}0 { #{$atributeName}: #{ 0 + $typeOfElementCalc } !important; }
+    }
+    .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + $typeOfElementCalc } !important; }
+  }
+}
+
+@mixin loop-element-dot($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
+  @for $i from 1 through $length {
+    @for $j from 1 through 10 {
+      @if $i == 1 {
+        .#{$nameElement}0-#{$j} { #{$atributeName}: #{'0' + '.' + ($j) + $typeOfElementCalc }; }
+      }
+      .#{$nameElement}#{$i * $baseCalc }-#{$j} { #{$atributeName}: #{( $i * $baseCalc ) + '.' + ($j) + $typeOfElementCalc }; }
+    }
+  }
+}
+
+@mixin loop-default-element($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
+  @for $i from 1 through $length {
+    .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + ' ' + $typeOfElementCalc }; }
+  }
+}
+
+@mixin loop-rem($nameElement, $atributeName, $baseCalc, $decimal, $typeOfElementCalc, $length) {
+  @for $i from 0 through $length {
+    @if $decimal > 0 {
+      @for $j from 0 through $decimal {
+        $tmpKey: '' !default;
+        $tmpValue: '' !default;
+        @if ($j > 0 ) {
+          $tmpKey: '-#{$j}';
+          $tmpValue: '.#{$j}';
+        }
+        .#{$nameElement}#{$i * $baseCalc }#{$tmpKey} { #{$atributeName}: #{( $i * $baseCalc ) + $tmpValue + $typeOfElementCalc }; }
+      }
+    } @else {
+      .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + $typeOfElementCalc }; }
+    }
+  }
+}
+
+
+//  ----------------
+//  Layout
+//  ----------------
+
+// width
+@include loop-element( 'w--', 'width', 1, '%', 100 );
+
+// height
+@include loop-element( 'h--', 'height', 1, '%', 100 );
+
+// margin
+@include loop-element( 'm--', 'margin', 1, 'px', 100 );
+@include loop-element-dot( 'm-rem-', 'margin', 1, 'rem !important', 100 );
+
+// margin-left
+@include loop-element( 'm-l-', 'margin-left', 1, 'px', 100 );
+@include loop-element-dot( 'm-l-rem-', 'margin-left', 1, 'rem !important', 100 );
+
+// margin-right
+@include loop-element( 'm-r-', 'margin-right', 1, 'px', 100 );
+@include loop-element-dot( 'm-r-rem-', 'margin-right', 1, 'rem !important', 100 );
+
+// margin-top
+@include loop-element( 'm-t-', 'margin-top', 1, 'px', 100 );
+@include loop-element-dot( 'm-t-rem-', 'margin-top', 1, 'rem !important', 100 );
+
+// margin-bottom
+@include loop-element( 'm-b-', 'margin-bottom', 1, 'px', 100 );
+@include loop-element-dot( 'm-b-rem-', 'margin-bottom', 1, 'rem !important', 100 );
+
+// padding
+@include loop-element( 'p--', 'padding', 1, 'px', 100 );
+@include loop-element-dot( 'p-rem-', 'padding', 1, 'rem !important', 100 );
+
+// padding-left
+@include loop-element( 'p-l-', 'padding-left', 1, 'px', 100 );
+@include loop-element-dot( 'p-l-rem-', 'padding-left', 1, 'rem !important', 10 );
+
+// padding-right
+@include loop-element( 'p-r-', 'padding-right', 1, 'px', 100 );
+@include loop-element-dot( 'p-r-rem-', 'padding-right', 1, 'rem !important', 10 );
+
+// padding-top
+@include loop-element( 'p-t-', 'padding-top', 1, 'px', 100 );
+@include loop-element-dot( 'p-t-rem-', 'padding-top', 1, 'rem !important', 10 );
+
+// padding-bottom
+@include loop-element( 'p-b-', 'padding-bottom', 1, 'px', 100 );
+@include loop-element-dot( 'p-b-rem-', 'padding-bottom', 1, 'rem !important', 10 );
+
+// reset margin & padding
+.no-padding { padding: 0px !important; }
+.no-margin { margin: 0px !important; }
+
+
+// gradient
+
+.bg-gradiente {
+  background: rgba($green-crypto, 1);
+  background: linear-gradient(0deg, rgba($green,.7) 0%, rgba($green-crypto,1) 50%, rgba($green,.7) 100%) !important;
+}
+

@@ -1,0 +1,200 @@
+$color-nav-link:  #7e8f5e !default;
+
+$size-nav-link: .86rem !default;
+
+.navbar-header {
+  padding: 0 !important;
+
+  .navbar-nav {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    .nav-item {
+      .nav-link {
+        min-height: 4rem;
+        color: $color-nav-link;
+        display: flex;
+        align-items: center!important;
+        border-bottom: .24rem solid;
+        border-color: transparent;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        font-size: $size-nav-link;
+        letter-spacing: .06px;
+        font-weight: 200;
+
+        -webkit-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+        &:hover {
+          color: #cfe9a0;
+          border-color: $color-nav-link;
+        }
+        &.active {
+          color: var(--white);
+          border-color: #bacc9f;
+        }
+      }
+      .profile-image {
+        border: solid .1rem #d0e9a073;
+      }
+
+      &:last-of-type {
+        background-color: #34383A;
+        padding-left: .8rem;
+        padding-right: .8rem;
+      }
+    }
+  }
+}
+
+
+.dropdown-profile{
+	// display: inline-block;
+  position: relative;
+  .profile-image {
+    margin-top: 0.6rem !important;
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    overflow: hidden;
+    // margin-left: .8rem;
+    margin-bottom: .8rem;
+    img {
+      width: 2.4rem;
+      height: auto;
+    }
+  }
+
+	&.active {
+		.dropdown__box{
+			visibility: visible;
+			opacity: 1;
+      margin-top: 15px;
+		}
+  }
+
+  .dropdown__button{
+    cursor: pointer;
+    display: inline-block;
+    line-height: 40px;
+		padding: 0 18px;
+		text-align: left;
+		border-radius: 4px;
+    border-bottom: .24rem solid;
+    border-color: transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: transparent;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+
+		.dropdown__name {
+      color: $color-nav-link;
+			font-size: $size-nav-link;
+			letter-spacing: .06px;
+      font-weight: 200;
+		}
+  }
+
+  &.active, &:hover {
+    .dropdown__button{
+      text-shadow: 1px 0px 2px unset black ;
+      background-color: rgba(#3b3f42, 0.62);
+    }
+  }
+  &:hover {
+    .dropdown__button{
+      border-color: $color-nav-link;
+      .dropdown__name {
+        color: #cfe9a0;
+      }
+    }
+  }
+  &.active {
+    .dropdown__button{
+      border-color: #bacc9f !important;
+      .dropdown__name {
+        color: var(--white);
+      }
+    }
+  }
+
+	.dropdown__box {
+		position: absolute;
+    min-width: 9rem;
+    width: 100%;
+    // left: 0;
+    left: -4rem;
+		background-color: #34383A;
+		border-radius: 4px;
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		visibility: hidden;
+		opacity: 0;
+		margin-top: 5px;
+
+		&:before{
+			content:'';
+			background-color: transparent;
+			border-right: 8px solid transparent;
+			position: absolute;
+			border-left: 8px solid transparent;
+			border-bottom: 8px solid #34383A;
+			border-top: 8px solid transparent;
+			top: -15px;
+			right: 2rem;
+		}
+
+		&:after{
+			content:'';
+			background-color: transparent;
+		}
+
+		.dropdown__menu {
+			margin: 0;
+			padding: 0 13px;
+      list-style: none;
+
+			.dropdown__item {
+				font-size: 13px;
+				padding: 13px 0;
+				text-align: left;
+				font-weight: 500;
+				color: rgba(#fff, 0.7);
+				cursor: pointer;
+				position: relative;
+        border-bottom: 1px solid #606d47;
+
+				&:last-of-type{
+					border-bottom: 0;
+				}
+
+				&:before{
+					content:'';
+					position: absolute;
+					width: 3px;
+					height: 28px;
+					background-color: $color-nav-link;
+					left: -13px;
+					top: 50%;
+					transform: translateY(-50%);
+					display:none;
+				}
+
+				&:hover {
+					&:before{
+						display:block;
+					}
+				}
+
+			}
+		}
+	}
+}

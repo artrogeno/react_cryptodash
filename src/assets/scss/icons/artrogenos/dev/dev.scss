@@ -1,0 +1,3144 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$artrogenos-dev-font-family}';
+  src:  url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.eot?hvw90f');
+  src:  url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.eot?hvw90f#iefix') format('embedded-opentype'),
+    url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.ttf?hvw90f') format('truetype'),
+    url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.woff?hvw90f') format('woff'),
+    url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.svg?hvw90f##{$artrogenos-dev-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-dev-"], [class*=" icon-dev-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$artrogenos-dev-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dev-acm {
+  &:before {
+    content: $ar-acm-dev;
+  }
+}
+.icon-dev-addthis {
+  &:before {
+    content: $ar-addthis-dev;
+  }
+}
+.icon-dev-adobe {
+  &:before {
+    content: $ar-adobe-dev;
+  }
+}
+.icon-dev-adobeacrobatreader {
+  &:before {
+    content: $ar-adobeacrobatreader-dev;
+  }
+}
+.icon-dev-adobeaftereffects {
+  &:before {
+    content: $ar-adobeaftereffects-dev;
+  }
+}
+.icon-dev-adobeaudition {
+  &:before {
+    content: $ar-adobeaudition-dev;
+  }
+}
+.icon-dev-adobecreativecloud {
+  &:before {
+    content: $ar-adobecreativecloud-dev;
+  }
+}
+.icon-dev-adobedreamweaver {
+  &:before {
+    content: $ar-adobedreamweaver-dev;
+  }
+}
+.icon-dev-adobeillustrator {
+  &:before {
+    content: $ar-adobeillustrator-dev;
+  }
+}
+.icon-dev-adobeindesign {
+  &:before {
+    content: $ar-adobeindesign-dev;
+  }
+}
+.icon-dev-adobelightroomcc {
+  &:before {
+    content: $ar-adobelightroomcc-dev;
+  }
+}
+.icon-dev-adobelightroomclassic {
+  &:before {
+    content: $ar-adobelightroomclassic-dev;
+  }
+}
+.icon-dev-adobephotoshop {
+  &:before {
+    content: $ar-adobephotoshop-dev;
+  }
+}
+.icon-dev-adobepremiere {
+  &:before {
+    content: $ar-adobepremiere-dev;
+  }
+}
+.icon-dev-adobetypekit {
+  &:before {
+    content: $ar-adobetypekit-dev;
+  }
+}
+.icon-dev-adobexd {
+  &:before {
+    content: $ar-adobexd-dev;
+  }
+}
+.icon-dev-airbnb {
+  &:before {
+    content: $ar-airbnb-dev;
+  }
+}
+.icon-dev-amazon {
+  &:before {
+    content: $ar-amazon-dev;
+  }
+}
+.icon-dev-amazonaws {
+  &:before {
+    content: $ar-amazonaws-dev;
+  }
+}
+.icon-dev-amd {
+  &:before {
+    content: $ar-amd-dev;
+  }
+}
+.icon-dev-americanexpress {
+  &:before {
+    content: $ar-americanexpress-dev;
+  }
+}
+.icon-dev-android {
+  &:before {
+    content: $ar-android-dev;
+  }
+}
+.icon-dev-angellist {
+  &:before {
+    content: $ar-angellist-dev;
+  }
+}
+.icon-dev-angular {
+  &:before {
+    content: $ar-angular-dev;
+  }
+}
+.icon-dev-angularuniversal {
+  &:before {
+    content: $ar-angularuniversal-dev;
+  }
+}
+.icon-dev-apache {
+  &:before {
+    content: $ar-apache-dev;
+  }
+}
+.icon-dev-apple {
+  &:before {
+    content: $ar-apple-dev;
+  }
+}
+.icon-dev-applemusic {
+  &:before {
+    content: $ar-applemusic-dev;
+  }
+}
+.icon-dev-applepay {
+  &:before {
+    content: $ar-applepay-dev;
+  }
+}
+.icon-dev-appveyor {
+  &:before {
+    content: $ar-appveyor-dev;
+  }
+}
+.icon-dev-archiveofourown {
+  &:before {
+    content: $ar-archiveofourown-dev;
+  }
+}
+.icon-dev-archlinux {
+  &:before {
+    content: $ar-archlinux-dev;
+  }
+}
+.icon-dev-artstation {
+  &:before {
+    content: $ar-artstation-dev;
+  }
+}
+.icon-dev-asana {
+  &:before {
+    content: $ar-asana-dev;
+  }
+}
+.icon-dev-at-and-t {
+  &:before {
+    content: $ar-at-and-t-dev;
+  }
+}
+.icon-dev-atlassian {
+  &:before {
+    content: $ar-atlassian-dev;
+  }
+}
+.icon-dev-atom {
+  &:before {
+    content: $ar-atom-dev;
+  }
+}
+.icon-dev-audible {
+  &:before {
+    content: $ar-audible-dev;
+  }
+}
+.icon-dev-aurelia {
+  &:before {
+    content: $ar-aurelia-dev;
+  }
+}
+.icon-dev-auth0 {
+  &:before {
+    content: $ar-auth0-dev;
+  }
+}
+.icon-dev-automatic {
+  &:before {
+    content: $ar-automatic-dev;
+  }
+}
+.icon-dev-autotask {
+  &:before {
+    content: $ar-autotask-dev;
+  }
+}
+.icon-dev-aventrix {
+  &:before {
+    content: $ar-aventrix-dev;
+  }
+}
+.icon-dev-azuredevops {
+  &:before {
+    content: $ar-azuredevops-dev;
+  }
+}
+.icon-dev-azurepipelines {
+  &:before {
+    content: $ar-azurepipelines-dev;
+  }
+}
+.icon-dev-baidu {
+  &:before {
+    content: $ar-baidu-dev;
+  }
+}
+.icon-dev-bamboo {
+  &:before {
+    content: $ar-bamboo-dev;
+  }
+}
+.icon-dev-bandcamp {
+  &:before {
+    content: $ar-bandcamp-dev;
+  }
+}
+.icon-dev-basecamp {
+  &:before {
+    content: $ar-basecamp-dev;
+  }
+}
+.icon-dev-bathasu {
+  &:before {
+    content: $ar-bathasu-dev;
+  }
+}
+.icon-dev-beats {
+  &:before {
+    content: $ar-beats-dev;
+  }
+}
+.icon-dev-behance {
+  &:before {
+    content: $ar-behance-dev;
+  }
+}
+.icon-dev-bigcartel {
+  &:before {
+    content: $ar-bigcartel-dev;
+  }
+}
+.icon-dev-bing {
+  &:before {
+    content: $ar-bing-dev;
+  }
+}
+.icon-dev-bit {
+  &:before {
+    content: $ar-bit-dev;
+  }
+}
+.icon-dev-bitbucket {
+  &:before {
+    content: $ar-bitbucket-dev;
+  }
+}
+.icon-dev-bitcoin {
+  &:before {
+    content: $ar-bitcoin-dev;
+  }
+}
+.icon-dev-bitdefender {
+  &:before {
+    content: $ar-bitdefender-dev;
+  }
+}
+.icon-dev-bitly {
+  &:before {
+    content: $ar-bitly-dev;
+  }
+}
+.icon-dev-blender {
+  &:before {
+    content: $ar-blender-dev;
+  }
+}
+.icon-dev-blogger {
+  &:before {
+    content: $ar-blogger-dev;
+  }
+}
+.icon-dev-boost {
+  &:before {
+    content: $ar-boost-dev;
+  }
+}
+.icon-dev-bootstrap {
+  &:before {
+    content: $ar-bootstrap-dev;
+  }
+}
+.icon-dev-bower {
+  &:before {
+    content: $ar-bower-dev;
+  }
+}
+.icon-dev-brand-dot-ai {
+  &:before {
+    content: $ar-brand-dot-ai-dev;
+  }
+}
+.icon-dev-buddy {
+  &:before {
+    content: $ar-buddy-dev;
+  }
+}
+.icon-dev-buffer {
+  &:before {
+    content: $ar-buffer-dev;
+  }
+}
+.icon-dev-buymeacoffee {
+  &:before {
+    content: $ar-buymeacoffee-dev;
+  }
+}
+.icon-dev-buzzfeed {
+  &:before {
+    content: $ar-buzzfeed-dev;
+  }
+}
+.icon-dev-cakephp {
+  &:before {
+    content: $ar-cakephp-dev;
+  }
+}
+.icon-dev-campaignmonitor {
+  &:before {
+    content: $ar-campaignmonitor-dev;
+  }
+}
+.icon-dev-cashapp {
+  &:before {
+    content: $ar-cashapp-dev;
+  }
+}
+.icon-dev-castorama {
+  &:before {
+    content: $ar-castorama-dev;
+  }
+}
+.icon-dev-castro {
+  &:before {
+    content: $ar-castro-dev;
+  }
+}
+.icon-dev-cevo {
+  &:before {
+    content: $ar-cevo-dev;
+  }
+}
+.icon-dev-chase {
+  &:before {
+    content: $ar-chase-dev;
+  }
+}
+.icon-dev-circle {
+  &:before {
+    content: $ar-circle-dev;
+  }
+}
+.icon-dev-circleci {
+  &:before {
+    content: $ar-circleci-dev;
+  }
+}
+.icon-dev-civicrm {
+  &:before {
+    content: $ar-civicrm-dev;
+  }
+}
+.icon-dev-clockify {
+  &:before {
+    content: $ar-clockify-dev;
+  }
+}
+.icon-dev-clojure {
+  &:before {
+    content: $ar-clojure-dev;
+  }
+}
+.icon-dev-cloudflare {
+  &:before {
+    content: $ar-cloudflare-dev;
+  }
+}
+.icon-dev-cmake {
+  &:before {
+    content: $ar-cmake-dev;
+  }
+}
+.icon-dev-co-op {
+  &:before {
+    content: $ar-co-op-dev;
+  }
+}
+.icon-dev-codacy {
+  &:before {
+    content: $ar-codacy-dev;
+  }
+}
+.icon-dev-codecademy {
+  &:before {
+    content: $ar-codecademy-dev;
+  }
+}
+.icon-dev-codeclimate {
+  &:before {
+    content: $ar-codeclimate-dev;
+  }
+}
+.icon-dev-codecov {
+  &:before {
+    content: $ar-codecov-dev;
+  }
+}
+.icon-dev-codeforces {
+  &:before {
+    content: $ar-codeforces-dev;
+  }
+}
+.icon-dev-codeigniter {
+  &:before {
+    content: $ar-codeigniter-dev;
+  }
+}
+.icon-dev-codepen {
+  &:before {
+    content: $ar-codepen-dev;
+  }
+}
+.icon-dev-coderwall {
+  &:before {
+    content: $ar-coderwall-dev;
+  }
+}
+.icon-dev-codesandbox {
+  &:before {
+    content: $ar-codesandbox-dev;
+  }
+}
+.icon-dev-codeship {
+  &:before {
+    content: $ar-codeship-dev;
+  }
+}
+.icon-dev-codewars {
+  &:before {
+    content: $ar-codewars-dev;
+  }
+}
+.icon-dev-codio {
+  &:before {
+    content: $ar-codio-dev;
+  }
+}
+.icon-dev-coffeescript {
+  &:before {
+    content: $ar-coffeescript-dev;
+  }
+}
+.icon-dev-commonworkflowlanguage {
+  &:before {
+    content: $ar-commonworkflowlanguage-dev;
+  }
+}
+.icon-dev-compropago {
+  &:before {
+    content: $ar-compropago-dev;
+  }
+}
+.icon-dev-conda-forge {
+  &:before {
+    content: $ar-conda-forge-dev;
+  }
+}
+.icon-dev-conekta {
+  &:before {
+    content: $ar-conekta-dev;
+  }
+}
+.icon-dev-confluence {
+  &:before {
+    content: $ar-confluence-dev;
+  }
+}
+.icon-dev-coursera {
+  &:before {
+    content: $ar-coursera-dev;
+  }
+}
+.icon-dev-cplusplus {
+  &:before {
+    content: $ar-cplusplus-dev;
+  }
+}
+.icon-dev-creativecommons {
+  &:before {
+    content: $ar-creativecommons-dev;
+  }
+}
+.icon-dev-crunchbase {
+  &:before {
+    content: $ar-crunchbase-dev;
+  }
+}
+.icon-dev-css3 {
+  &:before {
+    content: $ar-css3-dev;
+  }
+}
+.icon-dev-csswizardry {
+  &:before {
+    content: $ar-csswizardry-dev;
+  }
+}
+.icon-dev-d3-dot-js {
+  &:before {
+    content: $ar-d3-dot-js-dev;
+  }
+}
+.icon-dev-dailymotion {
+  &:before {
+    content: $ar-dailymotion-dev;
+  }
+}
+.icon-dev-dazn {
+  &:before {
+    content: $ar-dazn-dev;
+  }
+}
+.icon-dev-dblp {
+  &:before {
+    content: $ar-dblp-dev;
+  }
+}
+.icon-dev-debian {
+  &:before {
+    content: $ar-debian-dev;
+  }
+}
+.icon-dev-deezer {
+  &:before {
+    content: $ar-deezer-dev;
+  }
+}
+.icon-dev-delicious {
+  &:before {
+    content: $ar-delicious-dev;
+  }
+}
+.icon-dev-dell {
+  &:before {
+    content: $ar-dell-dev;
+  }
+}
+.icon-dev-deno {
+  &:before {
+    content: $ar-deno-dev;
+  }
+}
+.icon-dev-dependabot {
+  &:before {
+    content: $ar-dependabot-dev;
+  }
+}
+.icon-dev-designernews {
+  &:before {
+    content: $ar-designernews-dev;
+  }
+}
+.icon-dev-dev-dot-to {
+  &:before {
+    content: $ar-dev-dot-to-dev;
+  }
+}
+.icon-dev-deviantart {
+  &:before {
+    content: $ar-deviantart-dev;
+  }
+}
+.icon-dev-devrant {
+  &:before {
+    content: $ar-devrant-dev;
+  }
+}
+.icon-dev-diaspora {
+  &:before {
+    content: $ar-diaspora-dev;
+  }
+}
+.icon-dev-digg {
+  &:before {
+    content: $ar-digg-dev;
+  }
+}
+.icon-dev-digitalocean {
+  &:before {
+    content: $ar-digitalocean-dev;
+  }
+}
+.icon-dev-discord {
+  &:before {
+    content: $ar-discord-dev;
+  }
+}
+.icon-dev-discourse {
+  &:before {
+    content: $ar-discourse-dev;
+  }
+}
+.icon-dev-discover {
+  &:before {
+    content: $ar-discover-dev;
+  }
+}
+.icon-dev-disqus {
+  &:before {
+    content: $ar-disqus-dev;
+  }
+}
+.icon-dev-disroot {
+  &:before {
+    content: $ar-disroot-dev;
+  }
+}
+.icon-dev-django {
+  &:before {
+    content: $ar-django-dev;
+  }
+}
+.icon-dev-docker {
+  &:before {
+    content: $ar-docker-dev;
+  }
+}
+.icon-dev-docusign {
+  &:before {
+    content: $ar-docusign-dev;
+  }
+}
+.icon-dev-dot-net {
+  &:before {
+    content: $ar-dot-net-dev;
+  }
+}
+.icon-dev-draugiem-dot-lv {
+  &:before {
+    content: $ar-draugiem-dot-lv-dev;
+  }
+}
+.icon-dev-dribbble {
+  &:before {
+    content: $ar-dribbble-dev;
+  }
+}
+.icon-dev-drone {
+  &:before {
+    content: $ar-drone-dev;
+  }
+}
+.icon-dev-dropbox {
+  &:before {
+    content: $ar-dropbox-dev;
+  }
+}
+.icon-dev-drupal {
+  &:before {
+    content: $ar-drupal-dev;
+  }
+}
+.icon-dev-dtube {
+  &:before {
+    content: $ar-dtube-dev;
+  }
+}
+.icon-dev-duckduckgo {
+  &:before {
+    content: $ar-duckduckgo-dev;
+  }
+}
+.icon-dev-ebay {
+  &:before {
+    content: $ar-ebay-dev;
+  }
+}
+.icon-dev-eclipseide {
+  &:before {
+    content: $ar-eclipseide-dev;
+  }
+}
+.icon-dev-elastic {
+  &:before {
+    content: $ar-elastic-dev;
+  }
+}
+.icon-dev-elasticcloud {
+  &:before {
+    content: $ar-elasticcloud-dev;
+  }
+}
+.icon-dev-elasticsearch {
+  &:before {
+    content: $ar-elasticsearch-dev;
+  }
+}
+.icon-dev-elasticstack {
+  &:before {
+    content: $ar-elasticstack-dev;
+  }
+}
+.icon-dev-electron {
+  &:before {
+    content: $ar-electron-dev;
+  }
+}
+.icon-dev-elementary {
+  &:before {
+    content: $ar-elementary-dev;
+  }
+}
+.icon-dev-ello {
+  &:before {
+    content: $ar-ello-dev;
+  }
+}
+.icon-dev-empirekred {
+  &:before {
+    content: $ar-empirekred-dev;
+  }
+}
+.icon-dev-envato {
+  &:before {
+    content: $ar-envato-dev;
+  }
+}
+.icon-dev-esea {
+  &:before {
+    content: $ar-esea-dev;
+  }
+}
+.icon-dev-eslint {
+  &:before {
+    content: $ar-eslint-dev;
+  }
+}
+.icon-dev-ethereum {
+  &:before {
+    content: $ar-ethereum-dev;
+  }
+}
+.icon-dev-etsy {
+  &:before {
+    content: $ar-etsy-dev;
+  }
+}
+.icon-dev-eventbrite {
+  &:before {
+    content: $ar-eventbrite-dev;
+  }
+}
+.icon-dev-eventstore {
+  &:before {
+    content: $ar-eventstore-dev;
+  }
+}
+.icon-dev-evernote {
+  &:before {
+    content: $ar-evernote-dev;
+  }
+}
+.icon-dev-everplaces {
+  &:before {
+    content: $ar-everplaces-dev;
+  }
+}
+.icon-dev-evry {
+  &:before {
+    content: $ar-evry-dev;
+  }
+}
+.icon-dev-expertsexchange {
+  &:before {
+    content: $ar-expertsexchange-dev;
+  }
+}
+.icon-dev-f-secure {
+  &:before {
+    content: $ar-f-secure-dev;
+  }
+}
+.icon-dev-facebook {
+  &:before {
+    content: $ar-facebook-dev;
+  }
+}
+.icon-dev-faceit {
+  &:before {
+    content: $ar-faceit-dev;
+  }
+}
+.icon-dev-fandango {
+  &:before {
+    content: $ar-fandango-dev;
+  }
+}
+.icon-dev-favro {
+  &:before {
+    content: $ar-favro-dev;
+  }
+}
+.icon-dev-feathub {
+  &:before {
+    content: $ar-feathub-dev;
+  }
+}
+.icon-dev-fedora {
+  &:before {
+    content: $ar-fedora-dev;
+  }
+}
+.icon-dev-feedly {
+  &:before {
+    content: $ar-feedly-dev;
+  }
+}
+.icon-dev-fidoalliance {
+  &:before {
+    content: $ar-fidoalliance-dev;
+  }
+}
+.icon-dev-figma {
+  &:before {
+    content: $ar-figma-dev;
+  }
+}
+.icon-dev-firebase {
+  &:before {
+    content: $ar-firebase-dev;
+  }
+}
+.icon-dev-fitbit {
+  &:before {
+    content: $ar-fitbit-dev;
+  }
+}
+.icon-dev-flask {
+  &:before {
+    content: $ar-flask-dev;
+  }
+}
+.icon-dev-flattr {
+  &:before {
+    content: $ar-flattr-dev;
+  }
+}
+.icon-dev-flickr {
+  &:before {
+    content: $ar-flickr-dev;
+  }
+}
+.icon-dev-flipboard {
+  &:before {
+    content: $ar-flipboard-dev;
+  }
+}
+.icon-dev-flutter {
+  &:before {
+    content: $ar-flutter-dev;
+  }
+}
+.icon-dev-fnac {
+  &:before {
+    content: $ar-fnac-dev;
+  }
+}
+.icon-dev-foursquare {
+  &:before {
+    content: $ar-foursquare-dev;
+  }
+}
+.icon-dev-framer {
+  &:before {
+    content: $ar-framer-dev;
+  }
+}
+.icon-dev-freebsd {
+  &:before {
+    content: $ar-freebsd-dev;
+  }
+}
+.icon-dev-freecodecamp {
+  &:before {
+    content: $ar-freecodecamp-dev;
+  }
+}
+.icon-dev-furaffinity {
+  &:before {
+    content: $ar-furaffinity-dev;
+  }
+}
+.icon-dev-furrynetwork {
+  &:before {
+    content: $ar-furrynetwork-dev;
+  }
+}
+.icon-dev-garmin {
+  &:before {
+    content: $ar-garmin-dev;
+  }
+}
+.icon-dev-gatsby {
+  &:before {
+    content: $ar-gatsby-dev;
+  }
+}
+.icon-dev-gauges {
+  &:before {
+    content: $ar-gauges-dev;
+  }
+}
+.icon-dev-geocaching {
+  &:before {
+    content: $ar-geocaching-dev;
+  }
+}
+.icon-dev-gerrit {
+  &:before {
+    content: $ar-gerrit-dev;
+  }
+}
+.icon-dev-ghost {
+  &:before {
+    content: $ar-ghost-dev;
+  }
+}
+.icon-dev-git {
+  &:before {
+    content: $ar-git-dev;
+  }
+}
+.icon-dev-github {
+  &:before {
+    content: $ar-github-dev;
+  }
+}
+.icon-dev-gitlab {
+  &:before {
+    content: $ar-gitlab-dev;
+  }
+}
+.icon-dev-gitter {
+  &:before {
+    content: $ar-gitter-dev;
+  }
+}
+.icon-dev-glassdoor {
+  &:before {
+    content: $ar-glassdoor-dev;
+  }
+}
+.icon-dev-gmail {
+  &:before {
+    content: $ar-gmail-dev;
+  }
+}
+.icon-dev-gnu {
+  &:before {
+    content: $ar-gnu-dev;
+  }
+}
+.icon-dev-gnusocial {
+  &:before {
+    content: $ar-gnusocial-dev;
+  }
+}
+.icon-dev-go {
+  &:before {
+    content: $ar-go-dev;
+  }
+}
+.icon-dev-gog-dot-com {
+  &:before {
+    content: $ar-gog-dot-com-dev;
+  }
+}
+.icon-dev-goldenline {
+  &:before {
+    content: $ar-goldenline-dev;
+  }
+}
+.icon-dev-goodreads {
+  &:before {
+    content: $ar-goodreads-dev;
+  }
+}
+.icon-dev-google {
+  &:before {
+    content: $ar-google-dev;
+  }
+}
+.icon-dev-googleallo {
+  &:before {
+    content: $ar-googleallo-dev;
+  }
+}
+.icon-dev-googleanalytics {
+  &:before {
+    content: $ar-googleanalytics-dev;
+  }
+}
+.icon-dev-googlechrome {
+  &:before {
+    content: $ar-googlechrome-dev;
+  }
+}
+.icon-dev-googledrive {
+  &:before {
+    content: $ar-googledrive-dev;
+  }
+}
+.icon-dev-googlehangouts {
+  &:before {
+    content: $ar-googlehangouts-dev;
+  }
+}
+.icon-dev-googlehangoutschat {
+  &:before {
+    content: $ar-googlehangoutschat-dev;
+  }
+}
+.icon-dev-googlekeep {
+  &:before {
+    content: $ar-googlekeep-dev;
+  }
+}
+.icon-dev-googlepay {
+  &:before {
+    content: $ar-googlepay-dev;
+  }
+}
+.icon-dev-googleplay {
+  &:before {
+    content: $ar-googleplay-dev;
+  }
+}
+.icon-dev-googleplus {
+  &:before {
+    content: $ar-googleplus-dev;
+  }
+}
+.icon-dev-googlepodcasts {
+  &:before {
+    content: $ar-googlepodcasts-dev;
+  }
+}
+.icon-dev-gov-dot-uk {
+  &:before {
+    content: $ar-gov-dot-uk-dev;
+  }
+}
+.icon-dev-grafana {
+  &:before {
+    content: $ar-grafana-dev;
+  }
+}
+.icon-dev-graphcool {
+  &:before {
+    content: $ar-graphcool-dev;
+  }
+}
+.icon-dev-graphql {
+  &:before {
+    content: $ar-graphql-dev;
+  }
+}
+.icon-dev-grav {
+  &:before {
+    content: $ar-grav-dev;
+  }
+}
+.icon-dev-gravatar {
+  &:before {
+    content: $ar-gravatar-dev;
+  }
+}
+.icon-dev-groupon {
+  &:before {
+    content: $ar-groupon-dev;
+  }
+}
+.icon-dev-gulp {
+  &:before {
+    content: $ar-gulp-dev;
+  }
+}
+.icon-dev-gumroad {
+  &:before {
+    content: $ar-gumroad-dev;
+  }
+}
+.icon-dev-gumtree {
+  &:before {
+    content: $ar-gumtree-dev;
+  }
+}
+.icon-dev-hackaday {
+  &:before {
+    content: $ar-hackaday-dev;
+  }
+}
+.icon-dev-hackerrank {
+  &:before {
+    content: $ar-hackerrank-dev;
+  }
+}
+.icon-dev-hackhands {
+  &:before {
+    content: $ar-hackhands-dev;
+  }
+}
+.icon-dev-hackster {
+  &:before {
+    content: $ar-hackster-dev;
+  }
+}
+.icon-dev-hashnode {
+  &:before {
+    content: $ar-hashnode-dev;
+  }
+}
+.icon-dev-haskell {
+  &:before {
+    content: $ar-haskell-dev;
+  }
+}
+.icon-dev-hatenabookmark {
+  &:before {
+    content: $ar-hatenabookmark-dev;
+  }
+}
+.icon-dev-here {
+  &:before {
+    content: $ar-here-dev;
+  }
+}
+.icon-dev-heroku {
+  &:before {
+    content: $ar-heroku-dev;
+  }
+}
+.icon-dev-hexo {
+  &:before {
+    content: $ar-hexo-dev;
+  }
+}
+.icon-dev-highly {
+  &:before {
+    content: $ar-highly-dev;
+  }
+}
+.icon-dev-hipchat {
+  &:before {
+    content: $ar-hipchat-dev;
+  }
+}
+.icon-dev-hockeyapp {
+  &:before {
+    content: $ar-hockeyapp-dev;
+  }
+}
+.icon-dev-homify {
+  &:before {
+    content: $ar-homify-dev;
+  }
+}
+.icon-dev-hootsuite {
+  &:before {
+    content: $ar-hootsuite-dev;
+  }
+}
+.icon-dev-houzz {
+  &:before {
+    content: $ar-houzz-dev;
+  }
+}
+.icon-dev-html5 {
+  &:before {
+    content: $ar-html5-dev;
+  }
+}
+.icon-dev-huawei {
+  &:before {
+    content: $ar-huawei-dev;
+  }
+}
+.icon-dev-hubspot {
+  &:before {
+    content: $ar-hubspot-dev;
+  }
+}
+.icon-dev-hulu {
+  &:before {
+    content: $ar-hulu-dev;
+  }
+}
+.icon-dev-humblebundle {
+  &:before {
+    content: $ar-humblebundle-dev;
+  }
+}
+.icon-dev-icloud {
+  &:before {
+    content: $ar-icloud-dev;
+  }
+}
+.icon-dev-iconjar {
+  &:before {
+    content: $ar-iconjar-dev;
+  }
+}
+.icon-dev-icq {
+  &:before {
+    content: $ar-icq-dev;
+  }
+}
+.icon-dev-ifixit {
+  &:before {
+    content: $ar-ifixit-dev;
+  }
+}
+.icon-dev-imdb {
+  &:before {
+    content: $ar-imdb-dev;
+  }
+}
+.icon-dev-inkscape {
+  &:before {
+    content: $ar-inkscape-dev;
+  }
+}
+.icon-dev-instacart {
+  &:before {
+    content: $ar-instacart-dev;
+  }
+}
+.icon-dev-instagram {
+  &:before {
+    content: $ar-instagram-dev;
+  }
+}
+.icon-dev-instapaper {
+  &:before {
+    content: $ar-instapaper-dev;
+  }
+}
+.icon-dev-intel {
+  &:before {
+    content: $ar-intel-dev;
+  }
+}
+.icon-dev-intercom {
+  &:before {
+    content: $ar-intercom-dev;
+  }
+}
+.icon-dev-internetexplorer {
+  &:before {
+    content: $ar-internetexplorer-dev;
+  }
+}
+.icon-dev-invision {
+  &:before {
+    content: $ar-invision-dev;
+  }
+}
+.icon-dev-ionic {
+  &:before {
+    content: $ar-ionic-dev;
+  }
+}
+.icon-dev-itch-dot-io {
+  &:before {
+    content: $ar-itch-dot-io-dev;
+  }
+}
+.icon-dev-jabber {
+  &:before {
+    content: $ar-jabber-dev;
+  }
+}
+.icon-dev-java {
+  &:before {
+    content: $ar-java-dev;
+  }
+}
+.icon-dev-javascript {
+  &:before {
+    content: $ar-javascript-dev;
+  }
+}
+.icon-dev-jekyll {
+  &:before {
+    content: $ar-jekyll-dev;
+  }
+}
+.icon-dev-jenkins {
+  &:before {
+    content: $ar-jenkins-dev;
+  }
+}
+.icon-dev-jest {
+  &:before {
+    content: $ar-jest-dev;
+  }
+}
+.icon-dev-jira {
+  &:before {
+    content: $ar-jira-dev;
+  }
+}
+.icon-dev-joomla {
+  &:before {
+    content: $ar-joomla-dev;
+  }
+}
+.icon-dev-jquery {
+  &:before {
+    content: $ar-jquery-dev;
+  }
+}
+.icon-dev-jsdelivr {
+  &:before {
+    content: $ar-jsdelivr-dev;
+  }
+}
+.icon-dev-jsfiddle {
+  &:before {
+    content: $ar-jsfiddle-dev;
+  }
+}
+.icon-dev-json {
+  &:before {
+    content: $ar-json-dev;
+  }
+}
+.icon-dev-jupyter {
+  &:before {
+    content: $ar-jupyter-dev;
+  }
+}
+.icon-dev-justgiving {
+  &:before {
+    content: $ar-justgiving-dev;
+  }
+}
+.icon-dev-kaggle {
+  &:before {
+    content: $ar-kaggle-dev;
+  }
+}
+.icon-dev-kaios {
+  &:before {
+    content: $ar-kaios-dev;
+  }
+}
+.icon-dev-kentico {
+  &:before {
+    content: $ar-kentico-dev;
+  }
+}
+.icon-dev-keybase {
+  &:before {
+    content: $ar-keybase-dev;
+  }
+}
+.icon-dev-keycdn {
+  &:before {
+    content: $ar-keycdn-dev;
+  }
+}
+.icon-dev-khanacademy {
+  &:before {
+    content: $ar-khanacademy-dev;
+  }
+}
+.icon-dev-kibana {
+  &:before {
+    content: $ar-kibana-dev;
+  }
+}
+.icon-dev-kickstarter {
+  &:before {
+    content: $ar-kickstarter-dev;
+  }
+}
+.icon-dev-kik {
+  &:before {
+    content: $ar-kik-dev;
+  }
+}
+.icon-dev-kirby {
+  &:before {
+    content: $ar-kirby-dev;
+  }
+}
+.icon-dev-klout {
+  &:before {
+    content: $ar-klout-dev;
+  }
+}
+.icon-dev-known {
+  &:before {
+    content: $ar-known-dev;
+  }
+}
+.icon-dev-ko-fi {
+  &:before {
+    content: $ar-ko-fi-dev;
+  }
+}
+.icon-dev-koding {
+  &:before {
+    content: $ar-koding-dev;
+  }
+}
+.icon-dev-kotlin {
+  &:before {
+    content: $ar-kotlin-dev;
+  }
+}
+.icon-dev-kubernetes {
+  &:before {
+    content: $ar-kubernetes-dev;
+  }
+}
+.icon-dev-lanyrd {
+  &:before {
+    content: $ar-lanyrd-dev;
+  }
+}
+.icon-dev-laravel {
+  &:before {
+    content: $ar-laravel-dev;
+  }
+}
+.icon-dev-laravelhorizon {
+  &:before {
+    content: $ar-laravelhorizon-dev;
+  }
+}
+.icon-dev-last-dot-fm {
+  &:before {
+    content: $ar-last-dot-fm-dev;
+  }
+}
+.icon-dev-launchpad {
+  &:before {
+    content: $ar-launchpad-dev;
+  }
+}
+.icon-dev-leetcode {
+  &:before {
+    content: $ar-leetcode-dev;
+  }
+}
+.icon-dev-letsencrypt {
+  &:before {
+    content: $ar-letsencrypt-dev;
+  }
+}
+.icon-dev-letterboxd {
+  &:before {
+    content: $ar-letterboxd-dev;
+  }
+}
+.icon-dev-lgtm {
+  &:before {
+    content: $ar-lgtm-dev;
+  }
+}
+.icon-dev-liberapay {
+  &:before {
+    content: $ar-liberapay-dev;
+  }
+}
+.icon-dev-librarything {
+  &:before {
+    content: $ar-librarything-dev;
+  }
+}
+.icon-dev-line {
+  &:before {
+    content: $ar-line-dev;
+  }
+}
+.icon-dev-linewebtoon {
+  &:before {
+    content: $ar-linewebtoon-dev;
+  }
+}
+.icon-dev-linkedin {
+  &:before {
+    content: $ar-linkedin-dev;
+  }
+}
+.icon-dev-linux {
+  &:before {
+    content: $ar-linux-dev;
+  }
+}
+.icon-dev-linuxfoundation {
+  &:before {
+    content: $ar-linuxfoundation-dev;
+  }
+}
+.icon-dev-linuxmint {
+  &:before {
+    content: $ar-linuxmint-dev;
+  }
+}
+.icon-dev-livejournal {
+  &:before {
+    content: $ar-livejournal-dev;
+  }
+}
+.icon-dev-livestream {
+  &:before {
+    content: $ar-livestream-dev;
+  }
+}
+.icon-dev-logstash {
+  &:before {
+    content: $ar-logstash-dev;
+  }
+}
+.icon-dev-lua {
+  &:before {
+    content: $ar-lua-dev;
+  }
+}
+.icon-dev-macys {
+  &:before {
+    content: $ar-macys-dev;
+  }
+}
+.icon-dev-magento {
+  &:before {
+    content: $ar-magento-dev;
+  }
+}
+.icon-dev-magisk {
+  &:before {
+    content: $ar-magisk-dev;
+  }
+}
+.icon-dev-mail-dot-ru {
+  &:before {
+    content: $ar-mail-dot-ru-dev;
+  }
+}
+.icon-dev-mailchimp {
+  &:before {
+    content: $ar-mailchimp-dev;
+  }
+}
+.icon-dev-makerbot {
+  &:before {
+    content: $ar-makerbot-dev;
+  }
+}
+.icon-dev-manjaro {
+  &:before {
+    content: $ar-manjaro-dev;
+  }
+}
+.icon-dev-markdown {
+  &:before {
+    content: $ar-markdown-dev;
+  }
+}
+.icon-dev-marketo {
+  &:before {
+    content: $ar-marketo-dev;
+  }
+}
+.icon-dev-mastercard {
+  &:before {
+    content: $ar-mastercard-dev;
+  }
+}
+.icon-dev-mastodon {
+  &:before {
+    content: $ar-mastodon-dev;
+  }
+}
+.icon-dev-materialdesign {
+  &:before {
+    content: $ar-materialdesign-dev;
+  }
+}
+.icon-dev-mathworks {
+  &:before {
+    content: $ar-mathworks-dev;
+  }
+}
+.icon-dev-matrix {
+  &:before {
+    content: $ar-matrix-dev;
+  }
+}
+.icon-dev-matternet {
+  &:before {
+    content: $ar-matternet-dev;
+  }
+}
+.icon-dev-mediafire {
+  &:before {
+    content: $ar-mediafire-dev;
+  }
+}
+.icon-dev-mediatemple {
+  &:before {
+    content: $ar-mediatemple-dev;
+  }
+}
+.icon-dev-medium {
+  &:before {
+    content: $ar-medium-dev;
+  }
+}
+.icon-dev-meetup {
+  &:before {
+    content: $ar-meetup-dev;
+  }
+}
+.icon-dev-mega {
+  &:before {
+    content: $ar-mega-dev;
+  }
+}
+.icon-dev-messenger {
+  &:before {
+    content: $ar-messenger-dev;
+  }
+}
+.icon-dev-meteor {
+  &:before {
+    content: $ar-meteor-dev;
+  }
+}
+.icon-dev-micro-dot-blog {
+  &:before {
+    content: $ar-micro-dot-blog-dev;
+  }
+}
+.icon-dev-microgenetics {
+  &:before {
+    content: $ar-microgenetics-dev;
+  }
+}
+.icon-dev-microsoft {
+  &:before {
+    content: $ar-microsoft-dev;
+  }
+}
+.icon-dev-microsoftaccess {
+  &:before {
+    content: $ar-microsoftaccess-dev;
+  }
+}
+.icon-dev-microsoftazure {
+  &:before {
+    content: $ar-microsoftazure-dev;
+  }
+}
+.icon-dev-microsoftedge {
+  &:before {
+    content: $ar-microsoftedge-dev;
+  }
+}
+.icon-dev-microsoftexcel {
+  &:before {
+    content: $ar-microsoftexcel-dev;
+  }
+}
+.icon-dev-microsoftonedrive {
+  &:before {
+    content: $ar-microsoftonedrive-dev;
+  }
+}
+.icon-dev-microsoftonenote {
+  &:before {
+    content: $ar-microsoftonenote-dev;
+  }
+}
+.icon-dev-microsoftoutlook {
+  &:before {
+    content: $ar-microsoftoutlook-dev;
+  }
+}
+.icon-dev-microsoftpowerpoint {
+  &:before {
+    content: $ar-microsoftpowerpoint-dev;
+  }
+}
+.icon-dev-microsoftword {
+  &:before {
+    content: $ar-microsoftword-dev;
+  }
+}
+.icon-dev-minutemailer {
+  &:before {
+    content: $ar-minutemailer-dev;
+  }
+}
+.icon-dev-mix {
+  &:before {
+    content: $ar-mix-dev;
+  }
+}
+.icon-dev-mixcloud {
+  &:before {
+    content: $ar-mixcloud-dev;
+  }
+}
+.icon-dev-mixer {
+  &:before {
+    content: $ar-mixer-dev;
+  }
+}
+.icon-dev-monero {
+  &:before {
+    content: $ar-monero-dev;
+  }
+}
+.icon-dev-mongodb {
+  &:before {
+    content: $ar-mongodb-dev;
+  }
+}
+.icon-dev-monkeytie {
+  &:before {
+    content: $ar-monkeytie-dev;
+  }
+}
+.icon-dev-monogram {
+  &:before {
+    content: $ar-monogram-dev;
+  }
+}
+.icon-dev-monzo {
+  &:before {
+    content: $ar-monzo-dev;
+  }
+}
+.icon-dev-moo {
+  &:before {
+    content: $ar-moo-dev;
+  }
+}
+.icon-dev-mozilla {
+  &:before {
+    content: $ar-mozilla-dev;
+  }
+}
+.icon-dev-mozillafirefox {
+  &:before {
+    content: $ar-mozillafirefox-dev;
+  }
+}
+.icon-dev-mxlinux {
+  &:before {
+    content: $ar-mxlinux-dev;
+  }
+}
+.icon-dev-myspace {
+  &:before {
+    content: $ar-myspace-dev;
+  }
+}
+.icon-dev-mysql {
+  &:before {
+    content: $ar-mysql-dev;
+  }
+}
+.icon-dev-nativescript {
+  &:before {
+    content: $ar-nativescript-dev;
+  }
+}
+.icon-dev-neo4j {
+  &:before {
+    content: $ar-neo4j-dev;
+  }
+}
+.icon-dev-netflix {
+  &:before {
+    content: $ar-netflix-dev;
+  }
+}
+.icon-dev-netlify {
+  &:before {
+    content: $ar-netlify-dev;
+  }
+}
+.icon-dev-nextcloud {
+  &:before {
+    content: $ar-nextcloud-dev;
+  }
+}
+.icon-dev-nextdoor {
+  &:before {
+    content: $ar-nextdoor-dev;
+  }
+}
+.icon-dev-nginx {
+  &:before {
+    content: $ar-nginx-dev;
+  }
+}
+.icon-dev-nintendo {
+  &:before {
+    content: $ar-nintendo-dev;
+  }
+}
+.icon-dev-nintendogamecube {
+  &:before {
+    content: $ar-nintendogamecube-dev;
+  }
+}
+.icon-dev-nintendoswitch {
+  &:before {
+    content: $ar-nintendoswitch-dev;
+  }
+}
+.icon-dev-node-dot-js {
+  &:before {
+    content: $ar-node-dot-js-dev;
+  }
+}
+.icon-dev-nodemon {
+  &:before {
+    content: $ar-nodemon-dev;
+  }
+}
+.icon-dev-npm {
+  &:before {
+    content: $ar-npm-dev;
+  }
+}
+.icon-dev-nucleo {
+  &:before {
+    content: $ar-nucleo-dev;
+  }
+}
+.icon-dev-nuget {
+  &:before {
+    content: $ar-nuget-dev;
+  }
+}
+.icon-dev-nuxt-dot-js {
+  &:before {
+    content: $ar-nuxt-dot-js-dev;
+  }
+}
+.icon-dev-nvidia {
+  &:before {
+    content: $ar-nvidia-dev;
+  }
+}
+.icon-dev-octopusdeploy {
+  &:before {
+    content: $ar-octopusdeploy-dev;
+  }
+}
+.icon-dev-oculus {
+  &:before {
+    content: $ar-oculus-dev;
+  }
+}
+.icon-dev-odnoklassniki {
+  &:before {
+    content: $ar-odnoklassniki-dev;
+  }
+}
+.icon-dev-openaccess {
+  &:before {
+    content: $ar-openaccess-dev;
+  }
+}
+.icon-dev-openstreetmap {
+  &:before {
+    content: $ar-openstreetmap-dev;
+  }
+}
+.icon-dev-opensuse {
+  &:before {
+    content: $ar-opensuse-dev;
+  }
+}
+.icon-dev-opera {
+  &:before {
+    content: $ar-opera-dev;
+  }
+}
+.icon-dev-opsgenie {
+  &:before {
+    content: $ar-opsgenie-dev;
+  }
+}
+.icon-dev-oracle {
+  &:before {
+    content: $ar-oracle-dev;
+  }
+}
+.icon-dev-origin {
+  &:before {
+    content: $ar-origin-dev;
+  }
+}
+.icon-dev-osmc {
+  &:before {
+    content: $ar-osmc-dev;
+  }
+}
+.icon-dev-overcast {
+  &:before {
+    content: $ar-overcast-dev;
+  }
+}
+.icon-dev-ovh {
+  &:before {
+    content: $ar-ovh-dev;
+  }
+}
+.icon-dev-pagekit {
+  &:before {
+    content: $ar-pagekit-dev;
+  }
+}
+.icon-dev-pandora {
+  &:before {
+    content: $ar-pandora-dev;
+  }
+}
+.icon-dev-patreon {
+  &:before {
+    content: $ar-patreon-dev;
+  }
+}
+.icon-dev-paypal {
+  &:before {
+    content: $ar-paypal-dev;
+  }
+}
+.icon-dev-periscope {
+  &:before {
+    content: $ar-periscope-dev;
+  }
+}
+.icon-dev-php {
+  &:before {
+    content: $ar-php-dev;
+  }
+}
+.icon-dev-picarto-dot-tv {
+  &:before {
+    content: $ar-picarto-dot-tv-dev;
+  }
+}
+.icon-dev-pinboard {
+  &:before {
+    content: $ar-pinboard-dev;
+  }
+}
+.icon-dev-pingdom {
+  &:before {
+    content: $ar-pingdom-dev;
+  }
+}
+.icon-dev-pingup {
+  &:before {
+    content: $ar-pingup-dev;
+  }
+}
+.icon-dev-pinterest {
+  &:before {
+    content: $ar-pinterest-dev;
+  }
+}
+.icon-dev-pivotaltracker {
+  &:before {
+    content: $ar-pivotaltracker-dev;
+  }
+}
+.icon-dev-plangrid {
+  &:before {
+    content: $ar-plangrid-dev;
+  }
+}
+.icon-dev-player-dot-me {
+  &:before {
+    content: $ar-player-dot-me-dev;
+  }
+}
+.icon-dev-playstation {
+  &:before {
+    content: $ar-playstation-dev;
+  }
+}
+.icon-dev-playstation3 {
+  &:before {
+    content: $ar-playstation3-dev;
+  }
+}
+.icon-dev-playstation4 {
+  &:before {
+    content: $ar-playstation4-dev;
+  }
+}
+.icon-dev-plex {
+  &:before {
+    content: $ar-plex-dev;
+  }
+}
+.icon-dev-pluralsight {
+  &:before {
+    content: $ar-pluralsight-dev;
+  }
+}
+.icon-dev-plurk {
+  &:before {
+    content: $ar-plurk-dev;
+  }
+}
+.icon-dev-pocket {
+  &:before {
+    content: $ar-pocket-dev;
+  }
+}
+.icon-dev-podcasts {
+  &:before {
+    content: $ar-podcasts-dev;
+  }
+}
+.icon-dev-postgresql {
+  &:before {
+    content: $ar-postgresql-dev;
+  }
+}
+.icon-dev-postman {
+  &:before {
+    content: $ar-postman-dev;
+  }
+}
+.icon-dev-powershell {
+  &:before {
+    content: $ar-powershell-dev;
+  }
+}
+.icon-dev-prismic {
+  &:before {
+    content: $ar-prismic-dev;
+  }
+}
+.icon-dev-probot {
+  &:before {
+    content: $ar-probot-dev;
+  }
+}
+.icon-dev-processwire {
+  &:before {
+    content: $ar-processwire-dev;
+  }
+}
+.icon-dev-producthunt {
+  &:before {
+    content: $ar-producthunt-dev;
+  }
+}
+.icon-dev-proto-dot-io {
+  &:before {
+    content: $ar-proto-dot-io-dev;
+  }
+}
+.icon-dev-protonmail {
+  &:before {
+    content: $ar-protonmail-dev;
+  }
+}
+.icon-dev-proxmox {
+  &:before {
+    content: $ar-proxmox-dev;
+  }
+}
+.icon-dev-pypi {
+  &:before {
+    content: $ar-pypi-dev;
+  }
+}
+.icon-dev-python {
+  &:before {
+    content: $ar-python-dev;
+  }
+}
+.icon-dev-qiita {
+  &:before {
+    content: $ar-qiita-dev;
+  }
+}
+.icon-dev-qualcomm {
+  &:before {
+    content: $ar-qualcomm-dev;
+  }
+}
+.icon-dev-quantcast {
+  &:before {
+    content: $ar-quantcast-dev;
+  }
+}
+.icon-dev-quantopian {
+  &:before {
+    content: $ar-quantopian-dev;
+  }
+}
+.icon-dev-quora {
+  &:before {
+    content: $ar-quora-dev;
+  }
+}
+.icon-dev-qwiklabs {
+  &:before {
+    content: $ar-qwiklabs-dev;
+  }
+}
+.icon-dev-qzone {
+  &:before {
+    content: $ar-qzone-dev;
+  }
+}
+.icon-dev-r {
+  &:before {
+    content: $ar-r-dev;
+  }
+}
+.icon-dev-rails {
+  &:before {
+    content: $ar-rails-dev;
+  }
+}
+.icon-dev-raspberrypi {
+  &:before {
+    content: $ar-raspberrypi-dev;
+  }
+}
+.icon-dev-react {
+  &:before {
+    content: $ar-react-dev;
+  }
+}
+.icon-dev-readthedocs {
+  &:before {
+    content: $ar-readthedocs-dev;
+  }
+}
+.icon-dev-reason {
+  &:before {
+    content: $ar-reason-dev;
+  }
+}
+.icon-dev-redbubble {
+  &:before {
+    content: $ar-redbubble-dev;
+  }
+}
+.icon-dev-reddit {
+  &:before {
+    content: $ar-reddit-dev;
+  }
+}
+.icon-dev-redhat {
+  &:before {
+    content: $ar-redhat-dev;
+  }
+}
+.icon-dev-redis {
+  &:before {
+    content: $ar-redis-dev;
+  }
+}
+.icon-dev-redux {
+  &:before {
+    content: $ar-redux-dev;
+  }
+}
+.icon-dev-renren {
+  &:before {
+    content: $ar-renren-dev;
+  }
+}
+.icon-dev-reverbnation {
+  &:before {
+    content: $ar-reverbnation-dev;
+  }
+}
+.icon-dev-riot {
+  &:before {
+    content: $ar-riot-dev;
+  }
+}
+.icon-dev-riseup {
+  &:before {
+    content: $ar-riseup-dev;
+  }
+}
+.icon-dev-rollup-dot-js {
+  &:before {
+    content: $ar-rollup-dot-js-dev;
+  }
+}
+.icon-dev-roots {
+  &:before {
+    content: $ar-roots-dev;
+  }
+}
+.icon-dev-rss {
+  &:before {
+    content: $ar-rss-dev;
+  }
+}
+.icon-dev-ruby {
+  &:before {
+    content: $ar-ruby-dev;
+  }
+}
+.icon-dev-rubygems {
+  &:before {
+    content: $ar-rubygems-dev;
+  }
+}
+.icon-dev-runkeeper {
+  &:before {
+    content: $ar-runkeeper-dev;
+  }
+}
+.icon-dev-rust {
+  &:before {
+    content: $ar-rust-dev;
+  }
+}
+.icon-dev-safari {
+  &:before {
+    content: $ar-safari-dev;
+  }
+}
+.icon-dev-salesforce {
+  &:before {
+    content: $ar-salesforce-dev;
+  }
+}
+.icon-dev-samsung {
+  &:before {
+    content: $ar-samsung-dev;
+  }
+}
+.icon-dev-samsungpay {
+  &:before {
+    content: $ar-samsungpay-dev;
+  }
+}
+.icon-dev-sap {
+  &:before {
+    content: $ar-sap-dev;
+  }
+}
+.icon-dev-sass {
+  &:before {
+    content: $ar-sass-dev;
+  }
+}
+.icon-dev-saucelabs {
+  &:before {
+    content: $ar-saucelabs-dev;
+  }
+}
+.icon-dev-scala {
+  &:before {
+    content: $ar-scala-dev;
+  }
+}
+.icon-dev-scaleway {
+  &:before {
+    content: $ar-scaleway-dev;
+  }
+}
+.icon-dev-scribd {
+  &:before {
+    content: $ar-scribd-dev;
+  }
+}
+.icon-dev-scrutinizerci {
+  &:before {
+    content: $ar-scrutinizerci-dev;
+  }
+}
+.icon-dev-sega {
+  &:before {
+    content: $ar-sega-dev;
+  }
+}
+.icon-dev-sellfy {
+  &:before {
+    content: $ar-sellfy-dev;
+  }
+}
+.icon-dev-sensu {
+  &:before {
+    content: $ar-sensu-dev;
+  }
+}
+.icon-dev-sentry {
+  &:before {
+    content: $ar-sentry-dev;
+  }
+}
+.icon-dev-serverfault {
+  &:before {
+    content: $ar-serverfault-dev;
+  }
+}
+.icon-dev-shazam {
+  &:before {
+    content: $ar-shazam-dev;
+  }
+}
+.icon-dev-shopify {
+  &:before {
+    content: $ar-shopify-dev;
+  }
+}
+.icon-dev-signal {
+  &:before {
+    content: $ar-signal-dev;
+  }
+}
+.icon-dev-simpleicons {
+  &:before {
+    content: $ar-simpleicons-dev;
+  }
+}
+.icon-dev-sinaweibo {
+  &:before {
+    content: $ar-sinaweibo-dev;
+  }
+}
+.icon-dev-sitepoint {
+  &:before {
+    content: $ar-sitepoint-dev;
+  }
+}
+.icon-dev-skyliner {
+  &:before {
+    content: $ar-skyliner-dev;
+  }
+}
+.icon-dev-skype {
+  &:before {
+    content: $ar-skype-dev;
+  }
+}
+.icon-dev-slack {
+  &:before {
+    content: $ar-slack-dev;
+  }
+}
+.icon-dev-slashdot {
+  &:before {
+    content: $ar-slashdot-dev;
+  }
+}
+.icon-dev-slickpic {
+  &:before {
+    content: $ar-slickpic-dev;
+  }
+}
+.icon-dev-slides {
+  &:before {
+    content: $ar-slides-dev;
+  }
+}
+.icon-dev-smashingmagazine {
+  &:before {
+    content: $ar-smashingmagazine-dev;
+  }
+}
+.icon-dev-snapchat {
+  &:before {
+    content: $ar-snapchat-dev;
+  }
+}
+.icon-dev-snapcraft {
+  &:before {
+    content: $ar-snapcraft-dev;
+  }
+}
+.icon-dev-snyk {
+  &:before {
+    content: $ar-snyk-dev;
+  }
+}
+.icon-dev-society6 {
+  &:before {
+    content: $ar-society6-dev;
+  }
+}
+.icon-dev-sogou {
+  &:before {
+    content: $ar-sogou-dev;
+  }
+}
+.icon-dev-songkick {
+  &:before {
+    content: $ar-songkick-dev;
+  }
+}
+.icon-dev-soundcloud {
+  &:before {
+    content: $ar-soundcloud-dev;
+  }
+}
+.icon-dev-sourceforge {
+  &:before {
+    content: $ar-sourceforge-dev;
+  }
+}
+.icon-dev-sourcegraph {
+  &:before {
+    content: $ar-sourcegraph-dev;
+  }
+}
+.icon-dev-spacemacs {
+  &:before {
+    content: $ar-spacemacs-dev;
+  }
+}
+.icon-dev-sparkfun {
+  &:before {
+    content: $ar-sparkfun-dev;
+  }
+}
+.icon-dev-sparkpost {
+  &:before {
+    content: $ar-sparkpost-dev;
+  }
+}
+.icon-dev-spdx {
+  &:before {
+    content: $ar-spdx-dev;
+  }
+}
+.icon-dev-speakerdeck {
+  &:before {
+    content: $ar-speakerdeck-dev;
+  }
+}
+.icon-dev-spotify {
+  &:before {
+    content: $ar-spotify-dev;
+  }
+}
+.icon-dev-spotlight {
+  &:before {
+    content: $ar-spotlight-dev;
+  }
+}
+.icon-dev-spreaker {
+  &:before {
+    content: $ar-spreaker-dev;
+  }
+}
+.icon-dev-sprint {
+  &:before {
+    content: $ar-sprint-dev;
+  }
+}
+.icon-dev-squarespace {
+  &:before {
+    content: $ar-squarespace-dev;
+  }
+}
+.icon-dev-stackexchange {
+  &:before {
+    content: $ar-stackexchange-dev;
+  }
+}
+.icon-dev-stackoverflow {
+  &:before {
+    content: $ar-stackoverflow-dev;
+  }
+}
+.icon-dev-stackshare {
+  &:before {
+    content: $ar-stackshare-dev;
+  }
+}
+.icon-dev-stadia {
+  &:before {
+    content: $ar-stadia-dev;
+  }
+}
+.icon-dev-statamic {
+  &:before {
+    content: $ar-statamic-dev;
+  }
+}
+.icon-dev-staticman {
+  &:before {
+    content: $ar-staticman-dev;
+  }
+}
+.icon-dev-statuspage {
+  &:before {
+    content: $ar-statuspage-dev;
+  }
+}
+.icon-dev-steam {
+  &:before {
+    content: $ar-steam-dev;
+  }
+}
+.icon-dev-steem {
+  &:before {
+    content: $ar-steem-dev;
+  }
+}
+.icon-dev-steemit {
+  &:before {
+    content: $ar-steemit-dev;
+  }
+}
+.icon-dev-stitcher {
+  &:before {
+    content: $ar-stitcher-dev;
+  }
+}
+.icon-dev-storify {
+  &:before {
+    content: $ar-storify-dev;
+  }
+}
+.icon-dev-strava {
+  &:before {
+    content: $ar-strava-dev;
+  }
+}
+.icon-dev-stripe {
+  &:before {
+    content: $ar-stripe-dev;
+  }
+}
+.icon-dev-stubhub {
+  &:before {
+    content: $ar-stubhub-dev;
+  }
+}
+.icon-dev-styleshare {
+  &:before {
+    content: $ar-styleshare-dev;
+  }
+}
+.icon-dev-stylus {
+  &:before {
+    content: $ar-stylus-dev;
+  }
+}
+.icon-dev-sublimetext {
+  &:before {
+    content: $ar-sublimetext-dev;
+  }
+}
+.icon-dev-subversion {
+  &:before {
+    content: $ar-subversion-dev;
+  }
+}
+.icon-dev-superuser {
+  &:before {
+    content: $ar-superuser-dev;
+  }
+}
+.icon-dev-swarm {
+  &:before {
+    content: $ar-swarm-dev;
+  }
+}
+.icon-dev-swift {
+  &:before {
+    content: $ar-swift-dev;
+  }
+}
+.icon-dev-symfony {
+  &:before {
+    content: $ar-symfony-dev;
+  }
+}
+.icon-dev-t-mobile {
+  &:before {
+    content: $ar-t-mobile-dev;
+  }
+}
+.icon-dev-tails {
+  &:before {
+    content: $ar-tails-dev;
+  }
+}
+.icon-dev-tapas {
+  &:before {
+    content: $ar-tapas-dev;
+  }
+}
+.icon-dev-ted {
+  &:before {
+    content: $ar-ted-dev;
+  }
+}
+.icon-dev-teespring {
+  &:before {
+    content: $ar-teespring-dev;
+  }
+}
+.icon-dev-telegram {
+  &:before {
+    content: $ar-telegram-dev;
+  }
+}
+.icon-dev-tencentqq {
+  &:before {
+    content: $ar-tencentqq-dev;
+  }
+}
+.icon-dev-tencentweibo {
+  &:before {
+    content: $ar-tencentweibo-dev;
+  }
+}
+.icon-dev-tesla {
+  &:before {
+    content: $ar-tesla-dev;
+  }
+}
+.icon-dev-themighty {
+  &:before {
+    content: $ar-themighty-dev;
+  }
+}
+.icon-dev-themoviedatabase {
+  &:before {
+    content: $ar-themoviedatabase-dev;
+  }
+}
+.icon-dev-tidal {
+  &:before {
+    content: $ar-tidal-dev;
+  }
+}
+.icon-dev-tinder {
+  &:before {
+    content: $ar-tinder-dev;
+  }
+}
+.icon-dev-todoist {
+  &:before {
+    content: $ar-todoist-dev;
+  }
+}
+.icon-dev-toggl {
+  &:before {
+    content: $ar-toggl-dev;
+  }
+}
+.icon-dev-topcoder {
+  &:before {
+    content: $ar-topcoder-dev;
+  }
+}
+.icon-dev-toptal {
+  &:before {
+    content: $ar-toptal-dev;
+  }
+}
+.icon-dev-tor {
+  &:before {
+    content: $ar-tor-dev;
+  }
+}
+.icon-dev-trainerroad {
+  &:before {
+    content: $ar-trainerroad-dev;
+  }
+}
+.icon-dev-trakt {
+  &:before {
+    content: $ar-trakt-dev;
+  }
+}
+.icon-dev-travisci {
+  &:before {
+    content: $ar-travisci-dev;
+  }
+}
+.icon-dev-treehouse {
+  &:before {
+    content: $ar-treehouse-dev;
+  }
+}
+.icon-dev-trello {
+  &:before {
+    content: $ar-trello-dev;
+  }
+}
+.icon-dev-tripadvisor {
+  &:before {
+    content: $ar-tripadvisor-dev;
+  }
+}
+.icon-dev-trulia {
+  &:before {
+    content: $ar-trulia-dev;
+  }
+}
+.icon-dev-tumblr {
+  &:before {
+    content: $ar-tumblr-dev;
+  }
+}
+.icon-dev-twilio {
+  &:before {
+    content: $ar-twilio-dev;
+  }
+}
+.icon-dev-twitch {
+  &:before {
+    content: $ar-twitch-dev;
+  }
+}
+.icon-dev-twitter {
+  &:before {
+    content: $ar-twitter-dev;
+  }
+}
+.icon-dev-twoo {
+  &:before {
+    content: $ar-twoo-dev;
+  }
+}
+.icon-dev-typescript {
+  &:before {
+    content: $ar-typescript-dev;
+  }
+}
+.icon-dev-typo3 {
+  &:before {
+    content: $ar-typo3-dev;
+  }
+}
+.icon-dev-uber {
+  &:before {
+    content: $ar-uber-dev;
+  }
+}
+.icon-dev-ubisoft {
+  &:before {
+    content: $ar-ubisoft-dev;
+  }
+}
+.icon-dev-ubuntu {
+  &:before {
+    content: $ar-ubuntu-dev;
+  }
+}
+.icon-dev-udacity {
+  &:before {
+    content: $ar-udacity-dev;
+  }
+}
+.icon-dev-udemy {
+  &:before {
+    content: $ar-udemy-dev;
+  }
+}
+.icon-dev-uikit {
+  &:before {
+    content: $ar-uikit-dev;
+  }
+}
+.icon-dev-umbraco {
+  &:before {
+    content: $ar-umbraco-dev;
+  }
+}
+.icon-dev-unity {
+  &:before {
+    content: $ar-unity-dev;
+  }
+}
+.icon-dev-unsplash {
+  &:before {
+    content: $ar-unsplash-dev;
+  }
+}
+.icon-dev-untappd {
+  &:before {
+    content: $ar-untappd-dev;
+  }
+}
+.icon-dev-upwork {
+  &:before {
+    content: $ar-upwork-dev;
+  }
+}
+.icon-dev-v8 {
+  &:before {
+    content: $ar-v8-dev;
+  }
+}
+.icon-dev-vagrant {
+  &:before {
+    content: $ar-vagrant-dev;
+  }
+}
+.icon-dev-venmo {
+  &:before {
+    content: $ar-venmo-dev;
+  }
+}
+.icon-dev-verizon {
+  &:before {
+    content: $ar-verizon-dev;
+  }
+}
+.icon-dev-viadeo {
+  &:before {
+    content: $ar-viadeo-dev;
+  }
+}
+.icon-dev-viber {
+  &:before {
+    content: $ar-viber-dev;
+  }
+}
+.icon-dev-vim {
+  &:before {
+    content: $ar-vim-dev;
+  }
+}
+.icon-dev-vimeo {
+  &:before {
+    content: $ar-vimeo-dev;
+  }
+}
+.icon-dev-vine {
+  &:before {
+    content: $ar-vine-dev;
+  }
+}
+.icon-dev-virb {
+  &:before {
+    content: $ar-virb-dev;
+  }
+}
+.icon-dev-visa {
+  &:before {
+    content: $ar-visa-dev;
+  }
+}
+.icon-dev-visualstudiocode {
+  &:before {
+    content: $ar-visualstudiocode-dev;
+  }
+}
+.icon-dev-vk {
+  &:before {
+    content: $ar-vk-dev;
+  }
+}
+.icon-dev-vlcmediaplayer {
+  &:before {
+    content: $ar-vlcmediaplayer-dev;
+  }
+}
+.icon-dev-vsco {
+  &:before {
+    content: $ar-vsco-dev;
+  }
+}
+.icon-dev-vue-dot-js {
+  &:before {
+    content: $ar-vue-dot-js-dev;
+  }
+}
+.icon-dev-wattpad {
+  &:before {
+    content: $ar-wattpad-dev;
+  }
+}
+.icon-dev-weasyl {
+  &:before {
+    content: $ar-weasyl-dev;
+  }
+}
+.icon-dev-webcomponents-dot-org {
+  &:before {
+    content: $ar-webcomponents-dot-org-dev;
+  }
+}
+.icon-dev-webpack {
+  &:before {
+    content: $ar-webpack-dev;
+  }
+}
+.icon-dev-webstorm {
+  &:before {
+    content: $ar-webstorm-dev;
+  }
+}
+.icon-dev-wechat {
+  &:before {
+    content: $ar-wechat-dev;
+  }
+}
+.icon-dev-whatsapp {
+  &:before {
+    content: $ar-whatsapp-dev;
+  }
+}
+.icon-dev-wheniwork {
+  &:before {
+    content: $ar-wheniwork-dev;
+  }
+}
+.icon-dev-wii {
+  &:before {
+    content: $ar-wii-dev;
+  }
+}
+.icon-dev-wiiu {
+  &:before {
+    content: $ar-wiiu-dev;
+  }
+}
+.icon-dev-wikipedia {
+  &:before {
+    content: $ar-wikipedia-dev;
+  }
+}
+.icon-dev-windows {
+  &:before {
+    content: $ar-windows-dev;
+  }
+}
+.icon-dev-wire {
+  &:before {
+    content: $ar-wire-dev;
+  }
+}
+.icon-dev-wix {
+  &:before {
+    content: $ar-wix-dev;
+  }
+}
+.icon-dev-wolfram {
+  &:before {
+    content: $ar-wolfram-dev;
+  }
+}
+.icon-dev-wolframlanguage {
+  &:before {
+    content: $ar-wolframlanguage-dev;
+  }
+}
+.icon-dev-wolframmathematica {
+  &:before {
+    content: $ar-wolframmathematica-dev;
+  }
+}
+.icon-dev-wordpress {
+  &:before {
+    content: $ar-wordpress-dev;
+  }
+}
+.icon-dev-wpengine {
+  &:before {
+    content: $ar-wpengine-dev;
+  }
+}
+.icon-dev-x-pack {
+  &:before {
+    content: $ar-x-pack-dev;
+  }
+}
+.icon-dev-xbox {
+  &:before {
+    content: $ar-xbox-dev;
+  }
+}
+.icon-dev-xcode {
+  &:before {
+    content: $ar-xcode-dev;
+  }
+}
+.icon-dev-xero {
+  &:before {
+    content: $ar-xero-dev;
+  }
+}
+.icon-dev-xing {
+  &:before {
+    content: $ar-xing-dev;
+  }
+}
+.icon-dev-xsplit {
+  &:before {
+    content: $ar-xsplit-dev;
+  }
+}
+.icon-dev-yahoo {
+  &:before {
+    content: $ar-yahoo-dev;
+  }
+}
+.icon-dev-yammer {
+  &:before {
+    content: $ar-yammer-dev;
+  }
+}
+.icon-dev-yandex {
+  &:before {
+    content: $ar-yandex-dev;
+  }
+}
+.icon-dev-yarn {
+  &:before {
+    content: $ar-yarn-dev;
+  }
+}
+.icon-dev-ycombinator {
+  &:before {
+    content: $ar-ycombinator-dev;
+  }
+}
+.icon-dev-yelp {
+  &:before {
+    content: $ar-yelp-dev;
+  }
+}
+.icon-dev-youtube {
+  &:before {
+    content: $ar-youtube-dev;
+  }
+}
+.icon-dev-zapier {
+  &:before {
+    content: $ar-zapier-dev;
+  }
+}
+.icon-dev-zeit {
+  &:before {
+    content: $ar-zeit-dev;
+  }
+}
+.icon-dev-zendesk {
+  &:before {
+    content: $ar-zendesk-dev;
+  }
+}
+.icon-dev-zerply {
+  &:before {
+    content: $ar-zerply-dev;
+  }
+}
+.icon-dev-zillow {
+  &:before {
+    content: $ar-zillow-dev;
+  }
+}
+.icon-dev-zorin {
+  &:before {
+    content: $ar-zorin-dev;
+  }
+}
+

@@ -18,7 +18,7 @@ const Header = (props) => {
 
   return (
     <header className='fixed-top'>
-      <Navbar color='gray-theme' dark expand='md' className='navbar-header shadow-sm'>
+      <Navbar dark expand='md' className='navbar-header shadow-sm'>
         <div className='navbar-hamburber'>
           <Hamburger />
         </div>

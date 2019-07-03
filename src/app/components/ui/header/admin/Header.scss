@@ -4,6 +4,7 @@ $size-nav-link: .86rem !default;
 
 .navbar-header {
   padding: 0 !important;
+  background-color: #29292a !important;
 
   .navbar-nav {
     margin-left: auto !important;
@@ -49,7 +50,7 @@ $size-nav-link: .86rem !default;
 
 
 .dropdown-profile{
-	// display: inline-block;
+  margin-right: .2rem;
   position: relative;
   .profile-image {
     margin-top: 0.6rem !important;
@@ -59,7 +60,6 @@ $size-nav-link: .86rem !default;
     border-radius: 50%;
     vertical-align: middle;
     overflow: hidden;
-    // margin-left: .8rem;
     margin-bottom: .8rem;
     img {
       width: 2.4rem;
@@ -102,7 +102,7 @@ $size-nav-link: .86rem !default;
   &.active, &:hover {
     .dropdown__button{
       text-shadow: 1px 0px 2px unset black ;
-      background-color: rgba(#3b3f42, 0.62);
+      // background-color: rgba(#3b3f42, 0.62);
     }
   }
   &:hover {

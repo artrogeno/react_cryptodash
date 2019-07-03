@@ -1,39 +1,66 @@
-import React from 'react'
-import { Container, Row, Col, Button } from 'reactstrap'
+import React, { Fragment } from 'react'
+import { NavLink } from 'react-router-dom'
+import { Container, Row, Col, Nav, NavItem } from 'reactstrap'
+
+import WidgetCurrency from 'app/components/ui/Widgets/WidgetCurrency/WidgetCurrency'
+import './DashScreen.scss'
 
 const DashScreen = () => {
-  return (
-    <Container className='text-center'>
-      <Row>
-        <Col md={12}>
-          <h1>ADMIN</h1>
-        </Col>
+  const datas = [
+    {title: 'Bitcoin', balance: 2.55462, currency: 'BTC', icon: 'icon-dev-bitcoin', color: 'orange'},
+    {title: 'Ripple', balance: 234.55, currency: 'XRP', icon: 'icon-dev-eslint', color: 'blue'},
+    {title: 'Litecoin', balance: 234.55, currency: 'LTC', icon: 'icon-dev-cashapp', color: 'cyan'}
+  ]
 
-        <Col md={12}>
-          <p>
-            Cover is a one-page template for building
-            simple and beautiful home pages. Download, edit the text,
-            and add your own fullscreen background photo to make it your own.
-        </p>
-          <p>
-            <Button size='lg' outline color="primary">primary</Button>{' '}
-            <Button size='lg' outline color="secondary">secondary</Button>{' '}
-            <Button size='lg' outline color="success">success</Button>{' '}
-            <Button size='lg' outline color="info">info</Button>{' '}
-            <Button size='lg' outline color="warning">warning</Button>{' '}
-            <Button size='lg' outline color="danger">danger</Button>
-          </p>
-          <p>
-            <Button size='lg' color="primary">primary</Button>{' '}
-            <Button size='lg' color="secondary">secondary</Button>{' '}
-            <Button size='lg' color="success">success</Button>{' '}
-            <Button size='lg' color="info">info</Button>{' '}
-            <Button size='lg' color="warning">warning</Button>{' '}
-            <Button size='lg' color="danger">danger</Button>
-          </p>
-        </Col>
-      </Row>
-    </Container>
+  return (
+    <Fragment>
+      <div className='dash-menu'>
+        <div className='wrap-menu'>
+          <div className='wrap-balance'>
+            <div className='balance'>
+              <div className='title'>
+                <h3>Total balance:</h3>
+              </div>
+              <div className='currency'>
+                <h4>$ 10 554.88</h4>
+              </div>
+              <div className='percent'>
+                <span>+ $ 231.5 (4.7%)</span>
+              </div>
+            </div>
+          </div>
+          <div className='wrap-nav'>
+            <Nav className='justify-content-end'>
+              <NavItem>
+                <NavLink className='nav-link' to='#'>
+                  <span className='icon-pack-wireless-internet'></span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className='nav-link' to='#'>
+                  <span className='icon-pack-controls-6'></span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className='nav-link' to='#'>
+                  <span className='icon-pack-database-3'></span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink className='nav-link' to='#'>
+                  <span className='icon-dev-buzzfeed'></span>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </div>
+        </div>
+      </div>
+      <Container className='text-center'>
+        <Row className='mt-5'>
+          { datas.map((data, i) => <Col key={i} md={4}><WidgetCurrency data={data} /></Col> ) }
+        </Row>
+      </Container>
+    </Fragment>
   )
 }
 

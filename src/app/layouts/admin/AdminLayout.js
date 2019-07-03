@@ -23,7 +23,6 @@ const AdminLayout = (props) => {
     <Fragment>
       <Header app={app} />
       <main className="app-main text-center">
-        <span>Test</span>
         {props.children}
       </main>
     </Fragment>

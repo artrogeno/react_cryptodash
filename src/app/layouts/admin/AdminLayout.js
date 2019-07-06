@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { withRouter } from 'react-router-dom'
+import cryptoCompare from 'cryptocompare'
 
 import { getStorage, setStorage } from 'app/utils/services/session.storage'
 import { LayoutContext } from 'app/contexts/LayoutContext/LayoutContext'
@@ -18,6 +19,15 @@ const AdminLayout = (props) => {
       setLayouts(updateLayout)
     }
   })
+  const [cryptoList, setCryptoList] = useState({})
+
+  const fetchCoins = async () => {
+    let _coinList = await cryptoCompare.coinList()
+    if (_coinList.Data) {
+      console.log('opa')
+      setCryptoList(_coinList.Data)
+    }
+  }
 
   useEffect(() => {
     let updateLayout = { ...layouts }
@@ -29,6 +39,12 @@ const AdminLayout = (props) => {
       changeLayout()
     }
   }, [props, layouts, changeLayout])
+
+  useEffect(() => {
+    if (Object.keys(cryptoList).length === 0) {
+      fetchCoins();
+    }
+  }, [cryptoList])
 
   return (
     <LayoutContext.Provider value={layouts}>

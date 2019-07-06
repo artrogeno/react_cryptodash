@@ -1,3 +1,17 @@
 .app-main {
   padding-top: $spacer * 4.4;
+  transition: margin-left .5s;
+  &.main-half {
+    margin-left: 10rem;
+  }
+  &.main-full {
+    margin-left: 0;
+  }
+
+  @media (max-width: 768px) {
+    &.main-half {
+      // margin-right: 10rem !important;
+      margin-left: 0 !important;
+    }
+  }
 }

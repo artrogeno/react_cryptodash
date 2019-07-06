@@ -198,3 +198,13 @@ $size-nav-link: .86rem !default;
 		}
 	}
 }
+
+
+@media (max-width: 768px) {
+  .navbar-header {
+    flex-direction: row-reverse !important;
+    .navbar-nav-right {
+      display: none;
+    }
+  }
+}

@@ -3,6 +3,8 @@ $color-subtitle-widget-currency:   #818181 !default;
 $color-icon-add:   #d8d8d8 !default;
 
 .widget-currency {
+  margin-left: 1rem;
+  margin-right: 1rem;
   min-height: 6rem;
   // padding: 1rem;
   border-radius: .4rem;

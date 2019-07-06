@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap'
-// import { Navbar, NavbarBrand, Nav, NavItem, NavLink as NavbarLink, Button } from 'reactstrap'
+import { Navbar, Nav, NavItem } from 'reactstrap'
 
+import { LayoutContext } from 'app/contexts/LayoutContext/LayoutContext'
 import Hamburger from 'app/components/ui/hamburger/Hamburger'
 import Notification from 'app/components/ui/Notification/Notification'
+
 import Img from 'assets/img/profile.jpeg'
 import './Header.scss'
 
-const Header = (props) => {
-  const { app: { title} } = props
+const Header = () => {
+  const { layout } = useContext(LayoutContext)
   const [dropdown, setDropdown] = useState(false)
 
   const dropdownToggle = () => {
@@ -23,9 +24,9 @@ const Header = (props) => {
           <Hamburger />
         </div>
         <NavLink className='text-white navbar-brand' to='/app/dash'>
-          { title }
+          { layout.appName }
         </NavLink>
-        <Nav className='navbar-nav-right' navbar>
+        <Nav className='navbar-nav-right ' navbar>
           <NavItem>
             <NavLink className='nav-link' to='/app/dash'>
               Dashboard
@@ -37,7 +38,7 @@ const Header = (props) => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className='nav-link' to='/app/v'>
+            <NavLink className='nav-link' to='/app/order'>
               Orders
             </NavLink>
           </NavItem>

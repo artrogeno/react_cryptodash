@@ -70,13 +70,72 @@ $bg-link-hover:  #3a3939 !default;
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 
-            &:hover {
+            &:hover, &:active, &.active {
               background-color: $bg-link-hover;
               color: $color-link-hover;
               border-radius: .4rem;
             }
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 4rem !important;
+    .wrap-balance {
+      width: 100vw !important;
+      height: 3rem !important;
+      padding-left: 0 !important;
+      .balance {
+        text-align: left;
+        padding-left: 1rem !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+        .title {
+          margin-top: 1rem !important;
+          margin-right: 1rem;
+          h3 {
+            font-size: 1rem;
+            color: $color-title;
+            font-weight: 100;
+          }
+        }
+        .currency {
+          margin-top: .8rem !important;
+          h4 {
+            font-size: 1.2rem !important;
+            font-weight: 200;
+          }
+        }
+        .percent {
+          margin-left: 1rem;
+          margin-top: .9rem !important;
+          span {
+            font-size: .8rem;
+            font-weight: 200;
+            color: $color-percent;
+          }
+        }
+      }
+    }
+
+    .wrap-nav {
+      display: none;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .wrap-menu {
+      .wrap-balance {
+        position: fixed;
+        width: 40vw;
+        height: 4rem;
+        left: 0 !important;
+      }
+      .wrap-nav {
+        // width: 100%;
+        flex-grow: 1 !important;
       }
     }
   }
